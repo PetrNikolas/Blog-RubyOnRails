@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Petr Nikolas Prokop | Full-Stack Web Developer</title>
+    <meta name="description" content="Petr Nikolas Prokop | Full-Stack Web Developer">
+    <meta name="author" content="Petr Nikolas Prokop">
+    <link rel="shortcut icon" href="favicon.ico?v=3">
+
+    <meta property="og:title" content="Petr Nikolas Prokop | Full-Stack Web Developer">
+    <meta property="og:description" content="Petr Nikolas Prokop | Full-Stack Web Developer">
+    <meta property="og:url" content="http://www.petrnikolas.cz">
+    <meta property="og:image" content="http://www.petrnikolas.cz/images/share.jpg">
+    <meta property="og:type" content="website">
+    <%= csrf_meta_tags %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag params[:controller] %>
+  </head>
+
+  <body>
+    <%= render 'layouts/nav' %>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag params[:controller] %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!-- Home Posts -->
+<div class="home-posts">
+  <div class="centring">
+    <section>
+      <h1>Blog</h1>
+      <p>Web Development, Mobile Development.</p>
+    </section>
+  </div>
+</div>
+<!-- Cancel Home Posts -->
+
+<!-- Posts -->
+<div class="posts">
+  <div class="centring">
+    <section>
+        <p id="notice"><%= notice %></p>
+
+        <% @posts.each do |post| %>
+          <!-- Panel -->
+          <div class="panel-33">
+            <!-- Article -->
+            <article class="article">
+              <div class="post">
+                <h2><%= post.name %></h2>
+                <p>
+                  <%= post.title %>
+                </p>
+
+                <p>
+                  <%= link_to 'Show', post %>
+                  |
+                  <%= link_to 'Edit', edit_post_path(post) %>
+                  |
+                  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </p>
+              </div>
+            </article><!-- Cancel Article -->
+          </div><!-- Cancel Panel -->
+        <% end %>
+      <div class="clean"></div>
+
+      <div class="actions btn btn-default">
+        <p>
+          <%= link_to 'New Post', new_post_path %>
+        </p>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- Cancel Posts -->

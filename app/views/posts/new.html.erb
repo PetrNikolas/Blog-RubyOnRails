@@ -1,0 +1,26 @@
+<!-- Home Posts -->
+<div class="home-posts">
+  <div class="centring">
+    <section>
+      <h1>New Post</h1>
+    </section>
+  </div>
+</div>
+<!-- Cancel Home Posts -->
+
+<!-- Posts -->
+<div class="posts">
+  <div class="centring">
+    <section>
+      <article>
+        <%= render 'form', post: @post %>
+
+        <hr>
+        <p>
+          <%= link_to 'Back', posts_path %>
+        </p>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- Cancel Posts -->
