@@ -124,6 +124,36 @@
   }
 }
 
+/* Orher-love-tech Styles ------------------------------*/
+
+#other-love-tech {
+  padding: 50px 0px;
+  background-color: $color-3;
+
+  @media (max-width: 830px){
+    padding: 40px 0px;
+  }
+
+  @media (max-width: 768px){
+    display: none;
+  }
+
+  h2 {
+    color: $color-white;
+  }
+
+  h3{
+    border: 1px solid $color-white;
+    margin: 10px;
+  }
+
+  a {
+    color: $color-white;
+    font-size: 0.8em;
+    font-weight: bolder;
+  }
+}
+
 /* Contact Styles ------------------------------*/
 
 #contact {
