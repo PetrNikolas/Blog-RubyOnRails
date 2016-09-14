@@ -3,23 +3,24 @@
 /* Home Styles ------------------------------*/
 
 #home {
-  background: $color-grey;
-  padding: 90px 0px;
+  background: $color-2;
+  padding: 90px 20px;
+  color: $color-white;
 
   @media (max-width: 960px){
-    padding: 70px 0px;
+    padding: 70px 20px;
   }
 
   @media (max-width: 830px){
-    padding: 50px 0px;
+    padding: 50px 20px;
   }
 
   @media (max-width: 480px){
-    padding: 30px 0px;
+    padding: 30px 20px;
   }
 
-  @media (max-width: 240px){
-    padding: 10px 0px;
+  a{
+    color: $color-white;
   }
 
   p {
@@ -34,57 +35,45 @@
 /* About Styles ------------------------------*/
 
 #about {
-  padding: 50px 0px;
+  padding: 70px 20px;
   background-color: $color-white;
 
   @media (max-width: 830px){
-    padding: 40px 0px;
+    padding: 50px 20px;
   }
 
   @media (max-width: 330px){
-    padding: 20px 0px;
-  }
-}
-
-/* Skills Styles ------------------------------*/
-
-#skillsweb {
-  background-color: $color-white;
-  padding: 50px 0px 0px 0px;
-
-  @media (max-width: 830px){
-    padding: 40px 0px 0px 0px;
+    padding: 40px 20px;
   }
 
-  @media (max-width: 330px){
-    padding: 20px 0px 0px 0px;
+  img{
+    width: 50%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
-  #other-background {
-    background-color: $color-grey;
-  }
-
-  .panel-50 {
-    padding: 20px 0px;
+  .panel-40,
+  .panel-60{
+    margin: 50px 0px;
   }
 }
 
 /* Firms-references Styles ------------------------------*/
 
 #firms-references {
-  padding: 50px 0px;
-  background-color: $color-grey;
+  padding: 70px 20px;
+  background-color: $color-yellow;
 
   @media (max-width: 830px){
-    padding: 40px 0px;
+    padding: 50px 20px;
   }
 
   @media (max-width: 330px){
-    padding: 20px 0px;
+    padding: 40px 20px;
   }
 
   h2 {
-    color: $color-3;
+    color: $color-white;
     font-size: 2.7em;
     font-weight: bold;
 
@@ -94,19 +83,20 @@
   }
 
   a {
+    color: $color-white;
     font-size: 1.3em;
     font-weight: bolder;
   }
 }
 
-/* Love-tech Styles ------------------------------*/
+/* Niklick Styles ------------------------------*/
 
-#love-tech {
-  padding: 50px 0px;
-  background-color: $color-grey;
+#niklick {
+  padding: 70px 20px;
+  background-color: $color-white;
 
   @media (max-width: 830px){
-    padding: 40px 0px;
+    padding: 50px 20px;
   }
 
   @media (max-width: 768px){
@@ -114,24 +104,23 @@
   }
 
   h2 {
-    color: $color-3;
-    font-weight: bold;
+    font-size: 2em;
+    text-transform: none;
   }
 
   a {
-    font-size: 0.8em;
     font-weight: bolder;
   }
 }
 
-/* Orher-love-tech Styles ------------------------------*/
+/* Love Styles ------------------------------*/
 
-#other-love-tech {
-  padding: 50px 0px;
-  background-color: $color-3;
+#love-tech {
+  padding: 70px 20px;
+  background-color: $color-1;
 
   @media (max-width: 830px){
-    padding: 40px 0px;
+    padding: 50px 20px;
   }
 
   @media (max-width: 768px){
@@ -158,18 +147,14 @@
 
 #contact {
   background-color: $color-white;
-  padding: 50px 0px 0px 0px;
+  padding: 70px 20px;
 
   @media (max-width: 830px){
-    padding: 40px 0px 0px 0px;
+    padding: 50px 20px;
   }
 
   @media (max-width: 330px){
-    padding: 20px 0px 0px 0px;
-  }
-
-  #grey-background {
-    background-color: $color-grey;
+    padding: 40px 20px;
   }
 
   .panel-50 {
@@ -243,7 +228,7 @@
 
   .btn-default {
     font: inherit;
-    background-color: $color-2;
+    background-color: $main-color;
     border: 0;
     color: $color-grey;
     cursor: pointer;
@@ -258,7 +243,7 @@
   .btn-default:hover,
   .btn-default:focus {
     background-color: $color-grey;
-    color: $color-2;
+    color: $main-color;
   }
 }
 
@@ -266,10 +251,10 @@
 
 #soc {
   background-color: $color-white;
-  padding: 20px 0px;
+  padding: 40px 20px;
 
   @media (max-width: 830px){
-    padding: 40px 0px;
+    padding: 60px 20px;
   }
 
   .panel-20 {

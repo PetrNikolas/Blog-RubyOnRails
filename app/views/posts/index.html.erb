@@ -1,18 +1,15 @@
 <!-- Home Posts -->
-<div class="home-posts">
+<section class="home-posts">
   <div class="centring">
-    <section>
       <h1>Blog</h1>
       <p>Articles about a web development, mobile development and others. <br> EN and CZ language.</p>
-    </section>
   </div>
-</div>
+</section>
 <!-- Cancel Home Posts -->
 
 <!-- Posts -->
-<div class="posts">
+<section class="posts">
   <div class="centring">
-    <section>
         <p id="notice"><%= notice %></p>
 
         <% @posts.each do |post| %>
@@ -44,7 +41,6 @@
           <%= link_to 'New Post', new_post_path %>
         </p>
       </div>
-    </section>
   </div>
-</div>
+</section>
 <!-- Cancel Posts -->

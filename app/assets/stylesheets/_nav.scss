@@ -9,16 +9,16 @@
 }
 
 #logo a {
-  color: $color-2;
+  color: $color-white;
   font-size: 1.2em;
-  border: 1px solid $color-2;
+  border: 1px solid $color-white;
   padding: 15px;
 }
 
 #logo a:hover,
 #logo a:focus {
-  border: 1px solid $color-2;
-  color: $color-2;
+  border: 1px solid $color-white;
+  color: $color-white;
 }
 
 .menu {
@@ -26,8 +26,7 @@
   font-size: 1em;
   float: left;
   height: auto;
-  background-color: $color-white;
-  box-shadow: 0px 1px 0px $color-grey;
+  background-color: $color-2;
   padding: 5px 0px;
 }
 
@@ -47,12 +46,13 @@
   font-size: 0.9em;
 
   a {
+    color: $color-white;
     border-bottom: none;
   }
 }
 
 .menu__item a:hover {
-  border-bottom: none;
+  color: $color-white;
 }
 
 .menu__href {

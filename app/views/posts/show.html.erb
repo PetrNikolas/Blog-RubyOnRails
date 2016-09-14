@@ -1,7 +1,6 @@
 <!-- Home Posts -->
-<div class="home-posts">
+<section class="home-posts">
   <div class="centring">
-    <section>
       <p id="notice"><%= notice %></p>
 
       <h1>
@@ -13,15 +12,13 @@
           <strong><%= @post.title %></strong>
         </small>
       </p>
-    </section>
   </div>
-</div>
+</section>
 <!-- Cancel Home Posts -->
 
 <!-- Posts -->
-<div class="posts">
+<section class="posts">
   <div class="centring">
-    <section>
       <article>
         <p>
           <%= @post.content %>
@@ -34,7 +31,6 @@
           <%= link_to 'Back', posts_path %>
         </p>
       </article>
-    </section>
   </div>
-</div>
+</section>
 <!-- Cancel Posts -->
