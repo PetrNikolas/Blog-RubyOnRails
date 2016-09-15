@@ -31,12 +31,8 @@ h2, h3, h4, h5, h6 {
   padding: 20px;
   text-transform: lowercase;
 
-  @media (max-width: 830px) {
-    padding: 7px;
-  }
-
   @media (max-width: 720px) {
-    padding: 3px;
+    padding: 10px;
   }
 }
 
@@ -56,7 +52,6 @@ h1 {
 
   @media (max-width: 630px) {
     font-size: 2.7em;
-    padding-bottom: 0px;
   }
 
   @media (max-width: 240px) {
@@ -220,7 +215,7 @@ span{
 
 /* Icons Styles */
 
-.fa-envelope,
+.fa-graduation-cap,
 .fa-home,
 .fa-phone{
   text-shadow: none;
