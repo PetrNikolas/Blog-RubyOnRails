@@ -1,6 +1,43 @@
 <!-- Home Posts -->
 <section class="home-posts">
   <div class="centring">
+    <p id="notice"><%= notice %></p>
+
+    <h1>
+      <%= @post.name %>
+    </h1>
+
+    <p>
+      <small>
+        <strong><%= @post.title %></strong>
+      </small>
+    </p>
+  </div>
+</section>
+<!-- Cancel Home Posts -->
+
+<!-- Posts -->
+<section class="posts">
+  <div class="centring">
+    <article>
+      <p>
+        <%= @post.content %>
+      </p>
+
+      <hr>
+      <p>
+        <%= link_to 'Back', blog_index_path %>
+      </p>
+    </article>
+  </div>
+</section>
+<!-- Cancel Posts -->
+
+<!-- For USER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+<!-- Home Posts -->
+<section class="home-posts">
+  <div class="centring">
       <p id="notice"><%= notice %></p>
 
       <h1>

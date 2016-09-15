@@ -1,0 +1,36 @@
+<!-- Home Posts -->
+<section class="home-posts">
+  <div class="centring">
+    <h1>Blog</h1>
+    <p>Articles about a web development, mobile development and others.</p>
+  </div>
+</section>
+<!-- Cancel Home Posts -->
+
+<!-- Posts -->
+<section class="posts">
+  <div class="centring">
+    <p id="notice"><%= notice %></p>
+
+    <% @posts.each do |post| %>
+        <!-- Panel -->
+        <div class="panel-50">
+          <!-- Article -->
+          <article class="article">
+            <div class="post">
+              <h2><%= post.name %></h2>
+              <p>
+                <%= post.title %>
+              </p>
+
+              <p>
+                <%= link_to 'Show', post %>
+              </p>
+            </div>
+          </article><!-- Cancel Article -->
+        </div><!-- Cancel Panel -->
+    <% end %>
+    <div class="clean"></div>
+  </div>
+</section>
+<!-- Cancel Posts -->

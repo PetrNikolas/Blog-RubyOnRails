@@ -1,8 +1,7 @@
 <!-- Home Posts -->
 <section class="home-posts">
   <div class="centring">
-      <h1>Blog</h1>
-      <p>Articles about a web development, mobile development and others.</p>
+      <h1>Blog's administration</h1>
   </div>
 </section>
 <!-- Cancel Home Posts -->
@@ -14,14 +13,11 @@
 
         <% @posts.each do |post| %>
           <!-- Panel -->
-          <div class="panel-33">
+          <div class="panel-20">
             <!-- Article -->
             <article class="article">
               <div class="post">
                 <h2><%= post.name %></h2>
-                <p>
-                  <%= post.title %>
-                </p>
 
                 <p>
                   <%= link_to 'Show', post %>
