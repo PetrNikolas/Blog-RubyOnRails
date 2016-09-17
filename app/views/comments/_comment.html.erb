@@ -1,0 +1,11 @@
+<p>
+  <%= comment.created_at.to_s(:short) %> Author - <strong><%= comment.commenter %></strong>
+  <br>
+  <q><%= comment.body %></q>
+</p>
+
+<p>
+  <%= link_to 'Delete comment', [comment.post, comment],
+              :confirm => 'Are you sure?',
+              :method => :delete %>
+</p>

@@ -1,4 +1,5 @@
 @import "variables";
+@import "comments";
 
 #contact {
   display: none;
@@ -21,6 +22,10 @@
     padding-left: 0px;
     padding-bottom: 50px;
     color: $color-white;
+  }
+
+  small{
+    font-weight: bold;
   }
 }
 
@@ -45,6 +50,10 @@ article {
 
   @media (max-width: 330px){
     padding: 40px 20px;
+  }
+
+  small{
+    font-weight: bold;
   }
 
   .admin-nav{

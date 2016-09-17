@@ -1,0 +1,57 @@
+.comments {
+  padding: 10px 20px;
+  background-color: $color-white;
+
+  h2,
+  p{
+    text-align: left;
+  }
+
+  .form-control-static input {
+    font: inherit;
+    font-size: 1em;
+    padding: .3em 2em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $color-3;
+    width: 100%;
+    margin: 15px 0px;
+    color: $color-3;
+  }
+
+  .form-control-static-textarea textarea {
+    font:inherit;
+    font-size: 1em;
+    padding:.3em 2em;
+    outline:none;
+    border: none;
+    border-bottom: 1px solid $color-3;
+    width: 100%;
+    min-height: 250px;
+    margin: 15px 0px;
+    resize: none;
+    color: $color-3;
+  }
+
+  .btn-new-comment input,
+  .btn-new-comment p,
+  .btn-new-comment a {
+    font: inherit;
+    border: 0;
+    background-color: $color-grey;
+    color: $color-2;
+    cursor: pointer;
+    font-size: 1em;
+    padding:.3em 2em;
+    width: auto;
+    border-radius: 200em;
+    outline: none;
+    margin-top: 10px;
+  }
+
+  .btn-new-comment input:hover,
+  .btn-new-comment input:focus {
+    background-color: $color-2;
+    color: $color-grey;
+  }
+}

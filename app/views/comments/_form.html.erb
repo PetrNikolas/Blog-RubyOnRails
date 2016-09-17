@@ -1,0 +1,13 @@
+<%= form_for([@post, @post.comments.build]) do |f| %>
+    <div class="field form-control-static">
+      <%= f.label :author %><br />
+      <%= f.text_field :commenter %>
+    </div>
+    <div class="field form-control-static-textarea">
+      <%= f.label :comment %><br />
+      <%= f.text_area :body %>
+    </div>
+    <div class="actions btn-new-comment">
+      <%= f.submit %>
+    </div>
+<% end %>

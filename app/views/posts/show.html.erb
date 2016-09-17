@@ -9,7 +9,7 @@
 
       <p>
         <small>
-          <strong><%= @post.title %></strong>
+          <%= join_tags(@post) %>
         </small>
       </p>
   </div>
@@ -23,14 +23,45 @@
         <p>
           <%= @post.content %>
         </p>
-
-        <hr>
-        <p>
-          <%= link_to 'Edit', edit_post_path(@post) %>
-          |
-          <%= link_to 'Back', posts_path %>
-        </p>
       </article>
   </div>
 </section>
 <!-- Cancel Posts -->
+
+<!-- Comments -->
+<section class="comments">
+  <div class="centring">
+    <article>
+      <h2>Comments</h2>
+
+      <%= render @post.comments %>
+    </article>
+  </div>
+</section>
+<!-- Cancel Comments -->
+
+<!-- Comments -->
+<section class="comments">
+  <div class="centring">
+    <article>
+      <h2>Add comments</h2>
+      <div class="panel-67">
+
+        <%= render "comments/form" %>
+
+      </div>
+      <div class="clean"></div>
+    </article>
+  </div>
+</section>
+<!-- Cancel Comments -->
+
+<section class="posts">
+  <div class="centring">
+    <p>
+      <%= link_to 'Edit', edit_post_path(@post) %>
+      |
+      <%= link_to 'Back', posts_path %>
+    </p>
+  </div>
+</section>
