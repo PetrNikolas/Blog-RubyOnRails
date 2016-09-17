@@ -8,12 +8,33 @@
 
 <!-- Posts -->
 <section class="posts">
-  <div class="centring">
-        <p id="notice"><%= notice %></p>
+  <div class="center">
+    <p id="notice"><%= notice %></p>
 
-        <% @posts.each do |post| %>
+    <div class="panel-33">
+      <div class="admin-nav">
+        <div class="actions btn btn-new">
+          <p>
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;
+            <%= link_to 'New Post', new_post_path %>
+          </p>
+        </div>
+
+        <p>
+          <i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;
+          <a href="">User profile</a>
+        </p>
+
+        <p>
+          <a class="twitter-timeline" href="https://twitter.com/PetrNikolas" data-chrome="nofooter noheader" data-tweet-limit="3"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
+      </div>
+    </div>
+
+    <div class="panel-67">
+      <% @posts.each do |post| %>
           <!-- Panel -->
-          <div class="panel-20">
+          <div class="panel-33">
             <!-- Article -->
             <article class="article">
               <div class="post">
@@ -29,14 +50,9 @@
               </div>
             </article><!-- Cancel Article -->
           </div><!-- Cancel Panel -->
-        <% end %>
-      <div class="clean"></div>
-
-      <div class="actions btn btn-default">
-        <p>
-          <%= link_to 'New Post', new_post_path %>
-        </p>
-      </div>
+      <% end %>
+    </div>
+    <div class="clean"></div>
   </div>
 </section>
 <!-- Cancel Posts -->

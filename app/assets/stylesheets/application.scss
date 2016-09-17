@@ -126,6 +126,16 @@ span{
   }
 }
 
+.center {
+  margin: 0px auto;
+  width: 90%;
+  max-width: 1280px;
+
+  @media (max-width: 930px) {
+    width: 100%;
+  }
+}
+
 .pagination > .active > a,
 .pagination > .active > span,
 .pagination > .active > a:hover,
@@ -206,6 +216,19 @@ span{
   @media (max-width: 480px) {
       float: none;
       width: 100%;
+  }
+}
+
+.panel-67 {
+  float: left;
+  background: transparent;
+  height: auto;
+  width: 66.66666666666%;
+  margin: 0px auto;
+
+  @media (max-width: 480px) {
+    float: none;
+    width: 100%;
   }
 }
 
