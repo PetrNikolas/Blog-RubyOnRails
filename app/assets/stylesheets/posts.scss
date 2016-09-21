@@ -1,15 +1,10 @@
 @import "variables";
 @import "comments";
 
-#contact {
-  display: none;
-}
-
 /* Home Blog Styles */
 
 .home-posts {
-  padding: 20px;
-  background-color: $color-2;
+  background: $background;
 
   h1 {
     text-align: center;
@@ -19,7 +14,7 @@
     font-size: 1.2em;
     text-align: center;
     padding-top: 30px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-bottom: 50px;
     color: $color-white;
   }
@@ -70,18 +65,18 @@ article {
   }
 
   .post {
-    padding: 50px 0px;
+    padding: 50px 0;
 
     @media (max-width: 830px){
-      padding: 40px 0px;
+      padding: 40px 0;
     }
 
     @media (max-width: 480px){
-      padding: 20px 0px;
+      padding: 20px 0;
     }
 
     @media (max-width: 330px){
-      padding: 10px 0px;
+      padding: 10px 0;
     }
   }
 
@@ -93,7 +88,7 @@ article {
     border: none;
     border-bottom: 1px solid $color-3;
     width: 100%;
-    margin: 15px 0px;
+    margin: 15px 0;
     color: $color-3;
   }
 
@@ -106,7 +101,7 @@ article {
     border-bottom: 1px solid $color-3;
     width: 100%;
     min-height: 250px;
-    margin: 15px 0px;
+    margin: 15px 0;
     resize: none;
     color: $color-3;
   }

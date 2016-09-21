@@ -3,31 +3,23 @@
 /* Home Styles ------------------------------*/
 
 #home {
-  background: $color-2;
-  padding: 120px 20px;
   color: $color-white;
+  padding: 120px 20px;
+  background: radial-gradient(circle at bottom center,$color-2,$background 55%);
 
-  @media (max-width: 960px){
+  @media (max-width: 830px){
     padding: 90px 20px;
   }
 
-  @media (max-width: 830px){
-    padding: 70px 20px;
-  }
-
-  @media (max-width: 480px){
-    padding: 40px 20px;
-  }
-
-  a{
-    color: $color-white;
+  @media (max-width: 500px){
+    padding: 100px 20px 70px 20px;
   }
 
   p {
     font-size: 1.2em;
     text-align: left;
     padding-top: 30px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-bottom: 50px;
   }
 }
@@ -52,9 +44,13 @@
     box-sizing: border-box;
   }
 
+  span{
+    border-bottom: 1px solid;
+  }
+
   .panel-40,
   .panel-60{
-    margin: 50px 0px;
+    margin: 10px 0;
   }
 }
 
@@ -62,7 +58,7 @@
 
 #firms-references {
   padding: 70px 20px;
-  background-color: $color-yellow;
+  background-color: $color-white;
 
   @media (max-width: 830px){
     padding: 50px 20px;
@@ -73,7 +69,7 @@
   }
 
   h2 {
-    color: $color-white;
+    color: $background;
     font-size: 2.7em;
     font-weight: bold;
 
@@ -83,7 +79,7 @@
   }
 
   a {
-    color: $color-white;
+    color: $background;
     font-size: 1.3em;
     font-weight: bolder;
   }
@@ -92,19 +88,10 @@
 /* Niklick Styles ------------------------------*/
 
 #niklick {
-  padding: 70px 20px;
+  padding: 0 20px;
   background-color: $color-white;
 
-  @media (max-width: 830px){
-    padding: 50px 20px;
-  }
-
-  @media (max-width: 330px){
-    padding: 30px 20px;
-  }
-
-  h2 {
-    font-size: 2em;
+  h3 {
     text-transform: none;
   }
 
@@ -117,7 +104,7 @@
 
 #love-tech {
   padding: 70px 20px;
-  background-color: $color-1;
+  background-color: $color-white;
 
   @media (max-width: 830px){
     padding: 50px 20px;
@@ -127,17 +114,13 @@
     padding: 30px 20px;
   }
 
-  h2 {
-    color: $color-white;
-  }
-
   h3{
-    border: 1px solid $color-white;
+    border: 1px solid $main-color;
     margin: 10px;
   }
 
   a {
-    color: $color-white;
+    color: $main-color;
     font-size: 0.8em;
     font-weight: bolder;
   }
@@ -146,8 +129,9 @@
 /* Contact Styles ------------------------------*/
 
 #contact {
-  background-color: $color-white;
+  background-color: $background;
   padding: 70px 20px;
+  color: $color-white;
 
   @media (max-width: 830px){
     padding: 50px 20px;
@@ -157,20 +141,70 @@
     padding: 40px 20px;
   }
 
-  .panel-33 {
-    padding: 20px 0px;
+  .panel-50 {
+    padding: 70px 0;
+
+    @media (max-width: 830px){
+      padding: 40px 0;
+    }
+
+    @media (max-width: 330px){
+      padding: 20px 0;
+    }
+  }
+
+  .panel-33{
+    padding: 20px 0;
+  }
+
+  .border{
+    border-right: 1px solid;
+
+    @media (max-width: 480px){
+      border-right: none;
+    }
+  }
+
+  h3{
+    font-size: 1em;
+  }
+
+  hr {
+    border-top: 1px solid $color-white;
+  }
+
+  .btn-contact {
+    font: inherit;
+    background-color: $background;
+    border: 1px solid $color-white;
+    color: $color-white;
+    cursor: pointer;
+    font-size: 1em;
+    width: auto;
+    border-radius: 0;
+    padding: .7em 5em;
+    outline: none;
+
+    @media (max-width: 500px) and (min-width: 480px) {
+      padding: .7em 2.5em;
+    }
+
+    @media (max-width: 330px) {
+      padding: .7em 2.5em;
+    }
+  }
+
+  .btn-contact:hover,
+  .btn-contact:focus {
+    background-color: $color-white;
+    color: $color-2;
   }
 }
 
 /* Soc Styles Styles ------------------------------*/
 
 #soc {
-  background-color: $color-white;
-  padding: 40px 20px;
-
-  @media (max-width: 830px){
-    padding: 60px 20px;
-  }
+  background-color: transparent;
 
   .panel-20 {
     text-align: center;
@@ -178,9 +212,5 @@
 
   a {
     border-bottom: none;
-  }
-
-  @media (max-width: 480px) {
-    display: none;
   }
 }

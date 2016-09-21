@@ -26,9 +26,6 @@
     <%= post_form.label :content %>:
     <%= post_form.text_area :content %>
   </div>
-    
-  <%= render :partial => 'tags/form',
-             :locals => {:form => post_form} %>
 
   <div class="actions btn btn-default">
     <%= post_form.submit %>

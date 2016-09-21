@@ -5,7 +5,7 @@
 #logo {
   float: left;
   border: none;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 #logo a {
@@ -22,12 +22,13 @@
 }
 
 .menu {
+  position: static;
   width: 100%;
   font-size: 1em;
   float: left;
   height: auto;
-  background-color: $color-2;
-  padding: 5px 0px;
+  background-color: $background;
+  padding: 5px 0;
 }
 
 .menu__ul {
@@ -81,23 +82,25 @@
     width: 100%;
     line-height: 50px;
     text-align: center;
-    margin: 0px;
+    margin: 0;
   }
 
   .menu__item a {
     border: none;
-    color: $color-2;
+    color: $background;
   }
 
   .menu__item a:hover {
     border: none;
+    color: $background;
+    border-bottom: 1px solid;
   }
 
   .menu__ul  {
     width: 100%;
     float: left;
     height: auto;
-    margin-left: 0px;
+    margin-left: 0;
     background-color: $color-grey;
   }
 }
