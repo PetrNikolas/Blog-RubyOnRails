@@ -7,6 +7,7 @@
 @import "variables";
 @import "reset";
 @import "nav";
+@import "login_devise";
 
 @import "variables";
 
@@ -20,7 +21,7 @@
 body {
   font-family: "Roboto", arial, sans-serif;
   color: $main-color;
-  background-color: $background;
+  background-color: $color-white;
   line-height: 1.5;
   max-width: 2500px;
   height: 100%;

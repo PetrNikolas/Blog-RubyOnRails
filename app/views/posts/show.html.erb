@@ -54,9 +54,18 @@
 <section class="posts">
   <div class="centring">
     <p>
-      <%= link_to 'Edit', edit_post_path(@post) %>
-      |
-      <%= link_to 'Back', posts_path %>
+
+      <% if user_signed_in? %>
+
+        <%= link_to 'Edit', edit_post_path(@post) %>
+        |
+        <%= link_to 'Back', posts_path %>
+
+      <% else %>
+
+        <%= link_to 'Back', posts_path %>
+
+      <% end %>
     </p>
   </div>
 </section>
