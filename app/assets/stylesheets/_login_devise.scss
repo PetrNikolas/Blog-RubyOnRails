@@ -3,8 +3,10 @@
 .home-login {
   background: $background;
 
-  h1 {
+  h2 {
     text-align: center;
+    color: $color-white;
+    text-transform: none;
   }
 
   p {
@@ -21,6 +23,16 @@
   margin: 0 auto;
   width: 50%;
   max-width: 960px;
+  padding: 70px 20px;
+  background-color: $color-white;
+
+  @media (max-width: 830px){
+    padding: 50px 20px;
+  }
+
+  @media (max-width: 330px){
+    padding: 40px 20px;
+  }
 
   input {
     font: inherit;
