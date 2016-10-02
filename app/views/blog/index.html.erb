@@ -2,7 +2,7 @@
 <section class="home-posts">
   <div class="centring">
     <h1>Blog</h1>
-    <p>Tips, tricks, articles. <br> #webdevelopment, #frontend, #backend</p>
+    <p>Tips, tricks, articles. <br> About Front-End.</p>
   </div>
 </section>
 <!-- Cancel Home Posts -->
@@ -10,7 +10,6 @@
 <!-- Posts -->
 <section class="posts">
   <div class="centring">
-    <p id="notice"><%= notice %></p>
 
     <% @blog.each do |post| %>
         <!-- Panel -->
@@ -19,6 +18,9 @@
           <article class="article">
             <div class="post">
               <h2><%= post.name %></h2>
+              <p>
+                <small><%= post.created_at.to_s(:short) %></small>
+              </p>
               <p>
                 <%= post.title %>
               </p>

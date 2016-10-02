@@ -1,11 +1,14 @@
 <!-- Home Posts -->
 <section class="home-posts">
   <div class="centring">
-      <p id="notice"><%= notice %></p>
+    <p id="notice"><%= notice %></p>
 
-      <h1>
-        <%= @post.name %>
-      </h1>
+    <h1>
+      <%= @post.name %>
+    </h1>
+    <p>
+      <small><%= @post.created_at.to_s(:short) %></small>
+    </p>
 
   </div>
 </section>

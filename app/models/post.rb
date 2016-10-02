@@ -10,4 +10,6 @@ class Post < ApplicationRecord
   accepts_nested_attributes_for :tags, :allow_destroy => :true,
                                 :reject_if => proc { |attrs| attrs.all? { |k, v| v.blank? } }
 
+  default_scope {order('created_at DESC')}
+
 end
