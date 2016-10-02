@@ -8,6 +8,8 @@
     </h1>
     <p>
       <small><%= @post.created_at.to_s(:short) %></small>
+      <br>
+      <small><%= join_tags(@post) %></small>
     </p>
 
   </div>
@@ -66,7 +68,7 @@
 
       <% else %>
 
-        <%= link_to 'Back', posts_path %>
+        <%= link_to 'Back', blog_index_path %>
 
       <% end %>
     </p>

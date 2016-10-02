@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
 # Authorization
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

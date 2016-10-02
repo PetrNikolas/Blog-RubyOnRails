@@ -132,16 +132,6 @@ a:focus {
   }
 }
 
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus {
-  background-color: $color-2;
-  border-color: $color-2;
-}
-
 .panel {
   float: left;
   background: transparent;
@@ -267,5 +257,13 @@ a:focus {
 /* Notice Styles */
 
 #notice {
+  color: $color-2;
+}
+
+/* Pagination */
+
+.pagination .current,
+.pagination .current:hover,
+.pagination .current:focus {
   color: $color-2;
 }
