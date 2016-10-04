@@ -122,6 +122,12 @@ a:focus {
   }
 }
 
+.small-3, .small-6, .small-4, .small-8, .small-9, .small-12{
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
 /* Icons Styles */
 
 .fa-graduation-cap,
