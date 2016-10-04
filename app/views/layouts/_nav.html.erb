@@ -1,15 +1,28 @@
-<nav class="menu">
-  <div class="centring">
-    <div id="logo"><%= link_to "Petr Nikolas Prokop", root_path %></div>
-    <ul class="menu__ul menu__mainMenu">
-      <li class="menu__item menu__href"><%= link_to "Blog (CZ)", blog_index_path %></li>
+<nav class="main-menu">
+  <div class="row">
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
 
-      <% if user_signed_in? %>
+    <div class="top-bar" id="example-menu">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li id="logo"><%= link_to "Petr Nikolas Prokop", root_path %></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu menu__ul menu__mainMenu">
+          <li class="menu__item menu__href"><%= link_to "Blog (CZ)", blog_index_path %></li>
 
-          <li class="menu__item menu__href"><%= link_to "Admin", posts_path %></li>
-          <li class="menu__item menu__href"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          <% if user_signed_in? %>
 
-      <% end %>
-    </ul>
+              <li class="menu__item menu__href"><%= link_to "Administration", posts_path %></li>
+              <li class="menu__item menu__href"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+
+          <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
 </nav>

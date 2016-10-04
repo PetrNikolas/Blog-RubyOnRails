@@ -1,6 +1,6 @@
 <!-- Home Posts -->
 <section class="home-posts">
-  <div class="centring">
+  <div class="row">
     <h1>Blog</h1>
     <p>Tips, tricks, articles. <br> About Front-End.</p>
   </div>
@@ -9,11 +9,11 @@
 
 <!-- Posts -->
 <section class="posts">
-  <div class="centring">
+  <div class="row">
 
     <% @blog.each do |post| %>
         <!-- Panel -->
-        <div class="panel-50">
+        <div class="small-6 large-6 columns">
           <!-- Article -->
           <article class="article">
             <div class="post">
@@ -33,10 +33,9 @@
         </div><!-- Cancel Panel -->
     <% end %>
 
-    <div class="panel">
+    <div class="small-12 large-12 columns">
       <%= will_paginate @posts %>
     </div>
-    <div class="clean"></div>
   </div>
 </section>
 <!-- Cancel Posts -->

@@ -4,6 +4,10 @@
   padding: 10px 20px;
   background-color: $color-white;
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   h2,
   p{
     text-align: left;

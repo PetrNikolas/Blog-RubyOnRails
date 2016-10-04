@@ -143,3 +143,9 @@ article {
     border-bottom: none;
   }
 }
+
+@media (max-width: 768px) {
+  .search{
+    display: none;
+  }
+}

@@ -1,6 +1,6 @@
 <!-- Home Posts -->
 <section class="home-posts">
-  <div class="centring">
+  <div class="row">
     <p id="notice"><%= notice %></p>
 
     <h1>
@@ -16,61 +16,65 @@
 </section>
 <!-- Cancel Home Posts -->
 
-<!-- Posts -->
-<section class="posts">
-  <div class="centring">
-      <article>
-        <p>
-          <%= @post.content %>
-        </p>
-      </article>
+<div class="row">
+  <div class="small-9 large-9 columns">
+    <!-- Posts -->
+    <section class="posts">
+        <article>
+          <p>
+            <%= @post.content %>
+          </p>
+        </article>
+    </section>
+    <!-- Cancel Posts -->
+
+    <!-- Comments -->
+    <section class="comments">
+        <article>
+          <h2>Comments</h2>
+
+          <%= render @post.comments %>
+        </article>
+    </section>
+    <!-- Cancel Comments -->
+
+    <!-- Comments -->
+    <section class="comments">
+        <article>
+          <h2>Add comments</h2>
+          <div class="panel-67">
+
+            <%= render "comments/form" %>
+
+          </div>
+          <div class="clean"></div>
+        </article>
+    </section>
+    <!-- Cancel Comments -->
   </div>
-</section>
-<!-- Cancel Posts -->
 
-<!-- Comments -->
-<section class="comments">
-  <div class="centring">
-    <article>
-      <h2>Comments</h2>
-
-      <%= render @post.comments %>
-    </article>
+  <div class="small-3 large-3 columns search">
+    <section class="posts">
+        <h3>Search on Wikipedia</h3>
+    </section>
   </div>
-</section>
-<!-- Cancel Comments -->
 
-<!-- Comments -->
-<section class="comments">
-  <div class="centring">
-    <article>
-      <h2>Add comments</h2>
-      <div class="panel-67">
+  <div class="mall-12 large-12 columns">
+    <section class="posts">
+      <p>
 
-        <%= render "comments/form" %>
+        <% if user_signed_in? %>
 
-      </div>
-      <div class="clean"></div>
-    </article>
+            <%= link_to 'Edit', edit_post_path(@post) %>
+            |
+            <%= link_to 'Back', posts_path %>
+
+        <% else %>
+
+            <%= link_to 'Back', blog_index_path %>
+
+        <% end %>
+      </p>
+    </section>
   </div>
-</section>
-<!-- Cancel Comments -->
-
-<section class="posts">
-  <div class="centring">
-    <p>
-
-      <% if user_signed_in? %>
-
-        <%= link_to 'Edit', edit_post_path(@post) %>
-        |
-        <%= link_to 'Back', posts_path %>
-
-      <% else %>
-
-        <%= link_to 'Back', blog_index_path %>
-
-      <% end %>
-    </p>
-  </div>
-</section>
+</div>

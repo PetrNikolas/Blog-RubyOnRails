@@ -5,7 +5,11 @@
 #logo {
   float: left;
   border: none;
-  margin: 20px 0;
+}
+
+.title-bar {
+  background: transparent;
+  color: $color-white;
 }
 
 #logo a {
@@ -21,7 +25,7 @@
   color: $color-white;
 }
 
-.menu {
+.main-menu {
   position: relative;
   z-index: 10;
   width: 100%;
@@ -104,4 +108,8 @@
     margin-left: 0;
     background-color: $color-grey;
   }
+}
+
+.top-bar, .top-bar ul {
+  background-color: transparent;
 }

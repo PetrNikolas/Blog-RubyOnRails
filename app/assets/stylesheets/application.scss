@@ -112,16 +112,6 @@ a:focus {
   text-decoration: none;
 }
 
-.centring {
-  margin: 0 auto;
-  width: 70%;
-  max-width: 1280px;
-
-  @media (max-width: 930px) {
-    width: 100%;
-  }
-}
-
 .center {
   margin: 0 auto;
   width: 90%;
@@ -130,96 +120,6 @@ a:focus {
   @media (max-width: 930px) {
     width: 100%;
   }
-}
-
-.panel {
-  float: left;
-  background: transparent;
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.panel-20 {
-  float: left;
-  background: transparent;
-  height: auto;
-  width: 20%;
-  margin: 0 auto;
-
-  @media (max-width: 480px) {
-      float: none;
-      width: 100%;
-  }
-}
-
-.panel-33 {
-  float: left;
-  background: transparent;
-  height: auto;
-  width: 33.33333333333%;
-  margin: 0 auto;
-
-  @media (max-width: 480px) {
-      float: none;
-      width: 100%;
-  }
-}
-
-.panel-40 {
-  float: left;
-  background: transparent;
-  height: auto;
-  width: 40%;
-  margin: 0 auto;
-
-  @media (max-width: 480px) {
-      float: none;
-      width: 100%;
-  }
-}
-
-.panel-50 {
-  float: left;
-  background: transparent;
-  height: auto;
-  width: 50%;
-  margin: 0 auto;
-
-  @media (max-width: 480px) {
-      float: none;
-      width: 100%;
-  }
-}
-
-.panel-60 {
-  float: left;
-  background: transparent;
-  height: auto;
-  width: 60%;
-  margin: 0 auto;
-
-  @media (max-width: 480px) {
-      float: none;
-      width: 100%;
-  }
-}
-
-.panel-67 {
-  float: left;
-  background: transparent;
-  height: auto;
-  width: 66.66666666666%;
-  margin: 0 auto;
-
-  @media (max-width: 480px) {
-    float: none;
-    width: 100%;
-  }
-}
-
-.clean {
-  clear: both;
 }
 
 /* Icons Styles */
@@ -240,7 +140,6 @@ a:focus {
 
 .fa-facebook,
 .fa-github,
-.fa-instagram,
 .fa-linkedin,
 .fa-twitter{
   text-shadow: none;
