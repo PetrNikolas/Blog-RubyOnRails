@@ -56,5 +56,3 @@ group :production do
   gem 'puma', '~> 3.0'
   gem 'rake', '11.2.2'
 end
-
-ruby "2.3.1"

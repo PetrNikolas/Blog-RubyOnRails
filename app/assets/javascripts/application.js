@@ -3,6 +3,5 @@
 //= require turbolinks
 //= require blog
 //= require comments
-//= require home
 //= require posts
 //= require_tree .
