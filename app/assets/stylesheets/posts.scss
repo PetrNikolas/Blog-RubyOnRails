@@ -43,10 +43,6 @@ article {
     padding: 50px 20px;
   }
 
-  @media (max-width: 330px){
-    padding: 40px 20px;
-  }
-
   small{
     font-weight: bold;
   }
@@ -86,10 +82,10 @@ article {
     padding: .3em 2em;
     outline: none;
     border: none;
-    border-bottom: 1px solid $color-3;
+    border-bottom: 1px solid $color-dark-grey;
     width: 100%;
     margin: 15px 0;
-    color: $color-3;
+    color: $color-dark-grey;
   }
 
   .form-control-static-textarea textarea {
@@ -98,19 +94,19 @@ article {
     padding:.3em 2em;
     outline:none;
     border: none;
-    border-bottom: 1px solid $color-3;
+    border-bottom: 1px solid $color-dark-grey;
     width: 100%;
     min-height: 250px;
     margin: 15px 0;
     resize: none;
-    color: $color-3;
+    color: $color-dark-grey;
   }
 
   .btn-default input,
   .btn-default p,
   .btn-default a {
     font: inherit;
-    background-color: $color-2;
+    background-color: $red-color;
     border: 0;
     color: $color-grey;
     cursor: pointer;
@@ -125,13 +121,13 @@ article {
   .btn-default input:hover,
   .btn-default input:focus {
     background-color: $color-grey;
-    color: $color-2;
+    color: $red-color;
   }
 
   .btn-new a {
     font: inherit;
-    border-bottom: 1px solid $color-2;
-    color: $color-2;
+    border-bottom: 1px solid $red-color;
+    color: $red-color;
     cursor: pointer;
     outline: none;
     margin-top: 10px;
@@ -139,7 +135,7 @@ article {
 
   .btn-new a:hover,
   .btn-new a:focus {
-    border-top: 1px solid $color-2;
+    border-top: 1px solid $red-color;
     border-bottom: none;
   }
 }

@@ -40,15 +40,15 @@
     padding: .3em 2em;
     outline: none;
     border: none;
-    border-bottom: 1px solid $color-3;
+    border-bottom: 1px solid $color-dark-grey;
     width: 100%;
     margin: 15px 0;
-    color: $color-3;
+    color: $color-dark-grey;
   }
 
   .actions input {
     font: inherit;
-    background-color: $color-2;
+    background-color: $red-color;
     border: 0;
     color: $color-grey;
     cursor: pointer;
@@ -64,6 +64,6 @@
   .actions in:focus,
   .actions input:active{
     background-color: $color-grey;
-    color: $color-2;
+    color: $red-color;
   }
 }

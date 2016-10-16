@@ -107,7 +107,7 @@ a {
 
 a:hover,
 a:focus {
-  color: $color-2;
+  color: $red-color;
   border-bottom: 1px solid;
   text-decoration: none;
 }
@@ -120,6 +120,11 @@ a:focus {
   @media (max-width: 930px) {
     width: 100%;
   }
+}
+
+footer{
+  padding: 30px 20px;
+  background-color: $color-white;
 }
 
 .small-3, .small-6, .small-4, .small-8, .small-9, .small-12{
@@ -162,7 +167,7 @@ a:focus {
 /* Notice Styles */
 
 #notice {
-  color: $color-2;
+  color: $red-color;
 }
 
 /* Pagination */
@@ -170,5 +175,5 @@ a:focus {
 .pagination .current,
 .pagination .current:hover,
 .pagination .current:focus {
-  color: $color-2;
+  color: $red-color;
 }

@@ -5,8 +5,6 @@
       <%= @post.name %>
     </h1>
     <p>
-      <small><%= @post.created_at.to_s(:short) %></small>
-      <br>
       <small><%= join_tags(@post) %></small>
     </p>
 
@@ -25,30 +23,6 @@
         </article>
     </section>
     <!-- Cancel Posts -->
-
-    <!-- Comments -->
-    <section class="comments">
-        <article>
-          <h2>Comments</h2>
-
-          <%= render @post.comments %>
-        </article>
-    </section>
-    <!-- Cancel Comments -->
-
-    <!-- Comments -->
-    <section class="comments">
-        <article>
-          <h2>Add comments</h2>
-          <div class="panel-67">
-
-            <%= render "comments/form" %>
-
-          </div>
-          <div class="clean"></div>
-        </article>
-    </section>
-    <!-- Cancel Comments -->
   </div>
 
   <div class="small-12 large-12 columns">
@@ -63,7 +37,7 @@
 
         <% else %>
 
-            <%= link_to 'Back', blog_index_path %>
+            <%= link_to 'Zpět', blog_index_path %>
 
         <% end %>
       </p>

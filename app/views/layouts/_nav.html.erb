@@ -8,13 +8,11 @@
     <div class="top-bar" id="example-menu">
       <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu>
-          <li id="logo"><%= link_to "Petr Nikolas Prokop", root_path %></li>
+          <li id="logo"><%= link_to "DPNPD", root_path %></li>
         </ul>
       </div>
       <div class="top-bar-right">
         <ul class="menu menu__ul menu__mainMenu">
-          <li class="menu__item menu__href"><%= link_to "Blog (CZ)", blog_index_path %></li>
-
           <% if user_signed_in? %>
 
               <li class="menu__item menu__href"><%= link_to "Administration", posts_path %></li>

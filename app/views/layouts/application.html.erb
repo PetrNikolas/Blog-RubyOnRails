@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
-    <%= stylesheet_link_tag params[:controller], 'data-turbolinks-track': 'true' %>
+    <%= stylesheet_link_tag params[:controller] %>
   </head>
 
   <body>
@@ -27,6 +27,14 @@
     <main>
       <%= yield %>
     </main>
+
+    <footer>
+      <div class="row">
+        <p>
+          <a href="http://petrnikolas.cz">&copy; DPNPD</a>
+        </p>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
